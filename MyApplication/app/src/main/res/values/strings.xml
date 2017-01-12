@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Retrofit</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- 共享过度动画 -->
+    <string name="transition_photos">transition_animation_news_photos</string>
+
+</resources>
