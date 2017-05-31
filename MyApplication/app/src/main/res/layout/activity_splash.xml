@@ -224,6 +224,7 @@
                 android:gravity="center"
                 android:text="SearchAble"
                 android:textColor="#ffffff"/>
+
             <TextView
                 android:id="@+id/tv_keep"
                 android:layout_width="match_parent"
@@ -233,6 +234,7 @@
                 android:gravity="center"
                 android:text="KeepLiveActivity"
                 android:textColor="#ffffff"/>
+
             <TextView
                 android:id="@+id/tv_vanimator"
                 android:layout_width="match_parent"
@@ -241,6 +243,15 @@
                 android:background="@android:color/holo_green_light"
                 android:gravity="center"
                 android:text="ValueAnimator"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/tv_wallpager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="MagicWallPaper"
                 android:textColor="#ffffff"/>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

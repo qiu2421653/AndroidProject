@@ -62,7 +62,7 @@ public class SplashActivity extends BaseActivity {
 	@OnClick({
 			R.id.tv_retrofit, R.id.tv_drawer, R.id.tv_coord, R.id.tv_toolbarwithImage, R.id.tv_shareTrans, R.id.tv_tabLayoutwithImage, R.id.tv_bottomsheet,
 			R.id.tv_tinker, R.id.tv_materialView, R.id.tv_percent, R.id.tv_recycler, R.id.tv_custom, R.id.tv_rxjava, R.id.tv_intent, R.id.tv_svg, R.id.tv_daynight,
-			R.id.tv_search, R.id.tv_keep, R.id.tv_vanimator, R.id.tv_searchable
+			R.id.tv_search, R.id.tv_keep, R.id.tv_vanimator, R.id.tv_searchable, R.id.tv_wallpager
 	})
 	public void onMyClick(View view) {
 		int Id = view.getId();
@@ -148,6 +148,10 @@ public class SplashActivity extends BaseActivity {
 			case R.id.tv_vanimator:
 				//Animator
 				startAnimActivity(new Intent(this, AnimatorActivity.class));
+				break;
+			case R.id.tv_wallpager:
+				//Wallpager
+				startAnimActivity(new Intent(this, WallPaperActivity.class));
 				break;
 			default:
 				break;
