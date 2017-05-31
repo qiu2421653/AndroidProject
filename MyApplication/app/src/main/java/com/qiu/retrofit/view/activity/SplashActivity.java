@@ -150,7 +150,7 @@ public class SplashActivity extends BaseActivity {
 				startAnimActivity(new Intent(this, AnimatorActivity.class));
 				break;
 			case R.id.tv_wallpager:
-				//Wallpager
+				//Wallpaper
 				startAnimActivity(new Intent(this, WallPaperActivity.class));
 				break;
 			default:
