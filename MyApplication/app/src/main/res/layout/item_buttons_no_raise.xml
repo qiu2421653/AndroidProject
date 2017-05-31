@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_30dp"
+        android:gravity="center_vertical"
+        android:text="no_raise"
+        android:textAppearance="@style/TextStyle.Title"
+        />
+
+    <Button
+        style="@style/ButtonStyle.NoRaise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_4dp"
+        android:text="current_theme"/>
+
+    <Button
+        style="@style/ButtonStyle.Colored.NoRaise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_4dp"
+        android:text="current_theme"/>
+
+    <Button
+        style="@style/ButtonStyle.Colored.NoRaise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_4dp"
+        android:text="green_theme"
+        android:theme="@style/BaseTheme.Green"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_30dp"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:gravity="center_vertical"
+        android:text="flat"
+        android:textAppearance="@style/TextStyle.Title"
+        />
+
+    <Button
+        style="@style/ButtonStyle.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_4dp"
+        android:text="current_theme"/>
+
+    <Button
+        style="@style/ButtonStyle.Borderless.ColoredText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_4dp"
+        android:text="current_theme"
+        />
+
+    <Button
+        style="@style/ButtonStyle.Borderless.ColoredText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_4dp"
+        android:text="green_theme"
+        android:theme="@style/BaseTheme.Green"/>
+</merge>

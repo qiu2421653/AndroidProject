@@ -15,11 +15,14 @@ import butterknife.BindView;
  * @date 2017/1/12 17:09
  */
 public class ShareTransToActivity extends BaseActivity {
+	private static final String TAG = "ShareTransToActivity";
 	@BindView(R.id.toolbar)
 	Toolbar toolbar;
 
 	@Override
 	public void onCreateMyView() {
+//		getWindow().setEnterTransition(new Fade().setDuration(1000));
+//		getWindow().setExitTransition(new Fade().setDuration(1000));
 		setContentView(R.layout.activity_sharetransto);
 	}
 
@@ -37,5 +40,4 @@ public class ShareTransToActivity extends BaseActivity {
 	public BasePresenter initPresenter() {
 		return null;
 	}
-
 }

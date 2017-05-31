@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_30dp"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:gravity="center_vertical"
+        android:text="Selectable items rect"
+        android:textAppearance="@style/TextStyle.Title"/>
+
+    <LinearLayout
+        style="@style/SelectableItemStyle.Rect.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/common_8dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_8dp"
+            android:text="current_theme"
+            android:textAppearance="@style/TextStyle.Body1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SelectableItemStyle.Rect.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:theme="@style/AppTheme.Green">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/common_8dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_8dp"
+            android:text="green_theme"
+            android:textAppearance="@style/TextStyle.Body1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_30dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:text="Selectable items rounded_rect"
+        android:textAppearance="@style/TextStyle.Title"/>
+
+    <LinearLayout
+        style="@style/SelectableItemStyle.RoundedRect.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/common_8dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_8dp"
+            android:text="current_theme"
+            android:textAppearance="@style/TextStyle.Body1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SelectableItemStyle.RoundedRect.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:theme="@style/AppTheme.Green">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/common_8dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_8dp"
+            android:text="green_theme"
+            android:textAppearance="@style/TextStyle.Body1"/>
+    </LinearLayout>
+</merge>

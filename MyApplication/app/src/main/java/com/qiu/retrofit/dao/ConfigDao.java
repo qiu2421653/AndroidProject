@@ -4,12 +4,12 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
-import com.qiu.retrofit.MainApplication;
+import com.qiu.retrofit.MainApplicationLike;
 
 
 /**
  * Dao层
- * 
+ *
  * @author Qiu
  */
 public class ConfigDao {
@@ -30,7 +30,7 @@ public class ConfigDao {
 		if (sInstance == null) {
 			synchronized (ConfigDao.class) {
 				if (sInstance == null) {
-					sInstance = new ConfigDao(MainApplication.getContext());
+					sInstance = new ConfigDao(MainApplicationLike.getContext());
 				}
 			}
 		}

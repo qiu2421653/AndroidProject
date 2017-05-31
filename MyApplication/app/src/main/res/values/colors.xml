@@ -4,4 +4,47 @@
     <color name="colorPrimaryDark">#3F51B5</color>
     <color name="colorAccent">#FF4081</color>
     <color name="color_while">#ffffff</color>
+
+    <color name="background_light">#fafafa</color>
+    <color name="background_dark">#ff333333</color>
+
+    <color name="material_green_050">#E8F5E9</color>
+    <color name="material_green_100">#C8E6C9</color>
+    <color name="material_green_200">#A5D6A7</color>
+    <color name="material_green_300">#81C784</color>
+    <color name="material_green_400">#66BB6A</color>
+    <color name="material_green_500">#4CAF50</color>
+    <color name="material_green_600">#43A047</color>
+    <color name="material_green_700">#388E3C</color>
+    <color name="material_green_800">#2E7D32</color>
+    <color name="material_green_900">#1B5E20</color>
+    <color name="material_green_a100">#B9F6CA</color>
+    <color name="material_green_a200">#69F0AE</color>
+    <color name="material_green_a400">#00E676</color>
+    <color name="material_green_a700">#00C853</color>
+
+
+    <color name="selector_normal">@android:color/transparent</color>
+    <color name="selector_white_focused">#22FFFFFF</color>
+    <color name="selector_white_pressed">#33FFFFFF</color>
+    <color name="selector_black_focused">#12000000</color>
+    <color name="selector_black_pressed">#1F000000</color>
+    <color name="selector_red_focused">#22D50000</color>
+    <color name="selector_red_pressed">#44D50000</color>
+    <color name="selector_orange_focused">#22FF6D00</color>
+    <color name="selector_orange_pressed">#44FF6D00</color>
+    <color name="selector_lime_focused">#22AEEA00</color>
+    <color name="selector_lime_pressed">#44AEEA00</color>
+    <color name="selector_green_focused">#2200C853</color>
+    <color name="selector_green_pressed">#4400C853</color>
+    <color name="selector_teal_focused">#2200BFA5</color>
+    <color name="selector_teal_pressed">#4400BFA5</color>
+    <color name="selector_blue_focused">#222962FF</color>
+    <color name="selector_blue_pressed">#442962FF</color>
+    <color name="selector_purple_focused">#22AA00FF</color>
+    <color name="selector_purple_pressed">#44AA00FF</color>
+
+
+    <color name="scrim">#99323232</color>
+
 </resources>

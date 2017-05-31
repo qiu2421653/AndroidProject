@@ -1,11 +1,7 @@
 package com.qiu.retrofit.view.activity;
 
-import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.os.Build;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
@@ -59,14 +55,10 @@ public class ShareTransActivity extends BaseActivity {
 	 */
 	private void shareTransition() {
 		Intent intent = new Intent(mContext, ShareTransToActivity.class);
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-			ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext, ivShare, "transition_animation_news_photos");
-			mContext.startActivity(intent, options.toBundle());
+		if (android.os.Build.VERSION.SDK_INT > 20) {
+			startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this, ivShare, "transitionImg").toBundle());
 		} else {
-			//让新的Activity从一个小的范围扩大到全屏
-			ActivityOptionsCompat options = ActivityOptionsCompat
-					.makeScaleUpAnimation(ivShare, ivShare.getWidth() / 2, ivShare.getHeight() / 2, 0, 0);
-			ActivityCompat.startActivity((Activity) mContext, intent, options.toBundle());
+			startActivity(intent);
 		}
 	}
 }

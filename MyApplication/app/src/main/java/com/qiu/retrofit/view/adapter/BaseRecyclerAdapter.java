@@ -96,8 +96,7 @@ public class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseHolder<T>> 
 
 	@Override
 	public BaseHolder<T> onCreateViewHolder(ViewGroup parent, int viewType) {
-		View view = LayoutInflater.from(parent.getContext().getApplicationContext()).inflate(
-				mResLayout, parent, false);
+		View view = LayoutInflater.from(parent.getContext().getApplicationContext()).inflate(mResLayout, parent, false);
 		if (tags != null && tags.size() > 0) {
 			for (int tag : tags.keySet()) {
 				view.setTag(tag, tags.get(tag));

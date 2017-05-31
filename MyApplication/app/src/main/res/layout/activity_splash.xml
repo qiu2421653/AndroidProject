@@ -23,14 +23,14 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="Retrofit"/>
+            app:title="Splash"/>
 
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/common_20dp"
+        android:layout_marginTop="@dimen/common_10dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
 
@@ -47,6 +47,17 @@
                 android:background="@android:color/holo_red_dark"
                 android:gravity="center"
                 android:text="Retrofit 2.0"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_rxjava"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="RxJava"
                 android:textColor="#ffffff"
                 />
 
@@ -73,15 +84,164 @@
 
 
             <TextView
+                android:id="@+id/tv_toolbarwithImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:text="ToolbarWithImage"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_tabLayoutwithImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="TabLayoutWithImage"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_bottomsheet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="BottomSheet"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_tinker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:text="Tinker"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_materialView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="MaterialView"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
                 android:id="@+id/tv_shareTrans"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/common_40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@android:color/holo_blue_dark"
                 android:gravity="center"
-                android:text="ShareTransition"
+                android:text="SharTransition"
                 android:textColor="#ffffff"/>
 
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:text="Percent"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="RecyclerViewActivity"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_custom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="CustomView"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_intent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:text="IntentActivity"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_svg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="Svg"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_daynight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="DayNight"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_purple"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_searchable"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/background_dark"
+                android:gravity="center"
+                android:text="SearchAble"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/tv_keep"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:text="KeepLiveActivity"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/tv_vanimator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="ValueAnimator"
+                android:textColor="#ffffff"/>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>

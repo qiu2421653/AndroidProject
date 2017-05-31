@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_30dp"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:gravity="center_vertical"
+        android:text="checkboxes"
+        android:textAppearance="@style/TextStyle.Title"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:text="current_theme"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:text="green_theme"
+        android:theme="@style/BaseTheme.Green"/>
+
+</merge>

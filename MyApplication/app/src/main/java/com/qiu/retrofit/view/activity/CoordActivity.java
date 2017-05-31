@@ -4,7 +4,6 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
 
 import com.qiu.retrofit.R;
 import com.qiu.retrofit.presenter.BasePresenter;
@@ -98,5 +97,4 @@ public class CoordActivity extends BaseActivity {
 		NewsFrament fragment = new NewsFrament();
 		return fragment;
 	}
-
 }

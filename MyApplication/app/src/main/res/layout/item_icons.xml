@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_30dp"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:gravity="center_vertical"
+        android:text="theme_icons"
+        android:textAppearance="@style/TextStyle.Title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/ImageStyle.Colored"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/common_6dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            style="@style/ImageStyle.Colored"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/common_6dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_8dp"
+            android:text="current_theme"
+            android:textAppearance="@style/TextStyle.Body1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:theme="@style/BaseTheme.Green">
+
+        <ImageView
+            style="@style/ImageStyle.Colored"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/common_6dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            style="@style/ImageStyle.Colored"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/common_6dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_8dp"
+            android:text="green_theme"
+            android:textAppearance="@style/TextStyle.Body1"/>
+    </LinearLayout>
+
+</merge>

@@ -47,9 +47,6 @@
     java.lang.Object readResolve();
 }
 -keep public class * implements java.io.Serializable {*;}
-
-
-
 -dontwarn cn..**
 -dontwarn com.baidu.**
 -dontwarn com.google.gson.**
@@ -247,10 +244,13 @@ public static java.lang.String TABLENAME;
 -keep class org.apache.commons.codec.binary.**{*;}
 -keep class com.android.internal.http.multipart.**{*;}
 
+-keep class javax.crypto.**{*;}
+
 -dontwarn okio.**
 -dontwarn okhttp3.**
 -dontwarn com.squareup.okhttp3.**
 -dontwarn com.time.memory.core.im.**
 -dontwarn org.apache.commons.codec.binary.**
 -dontwarn com.android.internal.http.multipart.**
+-dontwarn javax.crypto.**
 

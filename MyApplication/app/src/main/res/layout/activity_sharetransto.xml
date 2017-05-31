@@ -31,6 +31,7 @@
         android:layout_width="@dimen/common_300dp"
         android:layout_height="@dimen/common_300dp"
         android:src="@mipmap/logo"
+        android:transitionName="transitionImg"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 

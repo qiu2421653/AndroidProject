@@ -1,10 +1,33 @@
 <resources>
-
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MaterialTheme" parent="BaseTheme">
+        <!-- API specific attributes 14+ -->
+        <item name="selectableRectDrawable">@drawable/state_list_selectable_rect_black</item>
+        <item name="selectableRectDrawableInverse">@drawable/state_list_selectable_rect_white</item>
+        <item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_black</item>
+        <item name="selectableRoundedRectDrawable">
+            @drawable/state_list_selectable_rounded_rect_black
+        </item>
+        <item name="selectableRoundedRectDrawableInverse">
+            @drawable/state_list_selectable_rounded_rect_white
+        </item>
+        <item name="selectableRoundedRectDrawableColored">
+            @drawable/state_list_selectable_rounded_rect_black
+        </item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
@@ -26,6 +49,126 @@
         <!-- 模糊 -->
         <item name="android:windowCloseOnTouchOutside">false</item>
         <!-- 界面外不消失 -->
+    </style>
+
+
+    <style name="TextStyle.Title" parent="TextAppearance.AppCompat.Title"/>
+
+    <style name="TextStyle.Body1" parent="TextAppearance.AppCompat.Body1"/>
+
+    <style name="TextStyle.Body2" parent="TextAppearance.AppCompat.Body2"/>
+
+
+    <!-- Default Dialog Theme -->
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog"/>
+
+    <!-- Default Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
+    <!-- Green Dialog Theme -->
+    <style name="AppTheme.Dialog.Green">
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_a700</item>
+    </style>
+
+    <!-- Green Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert.Green">
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_a700</item>
+    </style>
+
+    <!-- Green App Theme -->
+    <style name="BaseTheme.Green" parent="BaseTheme">
+        <!-- Attributes for all APIs -->
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_a700</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog.Green</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Green</item>
+    </style>
+
+    <style name="AppTheme.Green" parent="BaseTheme.Green">
+        <!-- API specific attributes 14+ -->
+        <item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_green</item>
+        <item name="selectableRoundedRectDrawableColored">
+            @drawable/state_list_selectable_rounded_rect_green
+        </item>
+    </style>
+
+
+    <!-- Button Styles -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button"/>
+
+    <style name="ButtonStyle.Colored" parent="Widget.AppCompat.Button.Colored"/>
+
+    <style name="ButtonStyle.Colored.NoRaise"/>
+
+    <style name="ButtonStyle.Borderless" parent="Widget.AppCompat.Button.Borderless"/>
+
+    <style name="ButtonStyle.Borderless.ColoredText" parent="Widget.AppCompat.Button.Borderless.Colored"/>
+
+    <!-- Selectable Item Styles -->
+    <style name="SelectableItemStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="SelectableItemStyle.Rect">
+        <item name="android:background">?selectableRectDrawable</item>
+    </style>
+
+    <style name="SelectableItemStyle.Rect.Colored">
+        <item name="android:background">?selectableRectDrawableColored</item>
+    </style>
+
+    <style name="SelectableItemStyle.RoundedRect">
+        <item name="android:background">?selectableRoundedRectDrawable</item>
+    </style>
+
+    <style name="SelectableItemStyle.RoundedRect.Colored">
+        <item name="android:background">?selectableRoundedRectDrawableColored</item>
+    </style>
+
+    <style name="SpinnerStyle.Underlined" parent="Widget.AppCompat.Spinner.Underlined"/>
+
+    <!-- Progress Bar Styles -->
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar"/>
+
+    <style name="ProgressBarStyle.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <!-- Image Styles -->
+    <style name="ImageStyle">
+    </style>
+
+    <style name="ImageStyle.Colored">
+        <item name="android:tint">?colorAccent</item>
+    </style>
+
+    <style name="KeepLiveStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="curprogressbar" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:minHeight">30dp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+        <item name="android:maxWidth">30dp</item>
     </style>
 
 

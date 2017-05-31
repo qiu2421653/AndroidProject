@@ -4,6 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".MainApplication"
@@ -11,25 +13,112 @@
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/BaseTheme">
+
+        <receiver
+            android:name=".core.receiver.KeepLiveReceiver"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
+
+        <service
+            android:name=".core.service.ForegroundService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".core.service.ForegroundService$InnerService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".core.service.SampleResultService"
+            android:exported="false"/>
 
         <activity android:name=".view.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.qiu.start"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
 
-
-        <activity android:name=".view.activity.MainActivity"/>
+        <activity android:name=".view.activity.quick.QuickActivity">
+        </activity>
+        <activity android:name=".view.activity.RetrofitActivity"/>
         <activity android:name=".view.activity.CoordActivity"/>
+        <activity android:name=".view.activity.BottomSheetActivity"/>
+        <activity android:name=".view.activity.TinkerActivity"/>
         <activity android:name=".view.activity.ShareTransActivity"/>
         <activity android:name=".view.activity.ShareTransToActivity"/>
+        <activity android:name=".view.activity.PercentActivity"/>
+        <activity android:name=".view.activity.RecyclerViewActivity"/>
+        <activity android:name=".view.activity.recycler.LayoutSwitchActivity"/>
+        <activity android:name=".view.activity.recycler.PullToRefreshUseActivity"/>
+        <activity android:name=".view.activity.RxJavaActivity"/>
+        <activity android:name=".view.activity.SvgActivity"/>
+        <activity android:name=".view.activity.CustomActivity"/>
+        <activity android:name=".view.activity.DayNightActivity"/>
+        <activity android:name=".view.activity.AnimatorActivity"/>
+
+        <activity android:name=".view.activity.ValueAnimator.FirstActivity"/>
+
+        <activity android:name=".view.activity.custom.FirstActivity"/>
+        <activity android:name=".view.activity.custom.SecondActivity"/>
+        <activity android:name=".view.activity.custom.ThirdActivity"/>
+        <activity android:name=".view.activity.custom.FourActivity"/>
+        <activity android:name=".view.activity.custom.FifthActivity"/>
+        <activity android:name=".view.activity.custom.SixActivity"/>
+        <activity android:name=".view.activity.custom.SeventhActivity"/>
+        <activity android:name=".view.activity.custom.EighthActivity"/>
+        <activity android:name=".view.activity.custom.NinthActivity"/>
+        <activity android:name=".view.activity.custom.TenActivity"/>
+        <activity android:name=".view.activity.custom.ElevenActivity"/>
+        <activity android:name=".view.activity.custom.ViewDragHelperActivity"/>
+
+        <activity android:name=".view.activity.search.SearchActivity"/>
 
         <activity
+            android:name=".view.activity.MaterialViewActivity"
+            android:theme="@style/MaterialTheme"/>
+        <activity
+            android:name=".view.activity.ToolBarImageActivity"
+            android:theme="@style/APPThemeDrawer"/>
+        <activity
+            android:name=".view.activity.TabsHeaderActivity"
+            android:theme="@style/APPThemeDrawer"/>
+        <activity
             android:name=".view.activity.DrawerActivity"
-            android:theme="@style/APPThemeDrawer">
-        </activity>
-    </application>
+            android:theme="@style/APPThemeDrawer"/>
 
+        <activity android:name=".view.activity.IntentActivity">
+            <intent-filter>
+                <action android:name="com.qiu.intentactivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.search.SearchableActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+
+        <activity
+            android:name=".view.activity.KeepLiveActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:theme="@style/KeepLiveStyle"
+            />
+    </application>
 </manifest>

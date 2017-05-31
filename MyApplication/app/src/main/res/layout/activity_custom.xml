@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    tools:context="com.qiu.retrofit.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        //app:layout_scrollFlags="scroll|enterAlways"
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="View"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:text="First"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_purple"
+                android:gravity="center"
+                android:text="Second"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_third"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="Third"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="Fourth"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_fifth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:text="Fifth"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_sixth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/background_dark"
+                android:gravity="center"
+                android:text="Sixth"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_seven"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="Seven"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_eighth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="Eighth"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_ninth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="Ninth"
+                android:textColor="#ffffff"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_ten"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:text="Ten"
+                android:textColor="#ffffff"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_eleven"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_purple"
+                android:gravity="center"
+                android:text="Eleven"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tv_drag"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="ViewDragHelper"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
