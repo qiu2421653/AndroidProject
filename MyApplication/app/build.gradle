@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
+//apply plugin: 'android-apt'
 apply from: 'tinkerpatch.gradle'
 apply plugin: 'org.greenrobot.greendao'
 
@@ -22,7 +22,7 @@ dependencies {
     compile 'com.android.support:palette-v7:25.1.0'
     compile 'com.android.support:percent:22.2.0'
     compile 'com.jakewharton:butterknife:8.4.0'
-    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:retrofit-converters:2.1.0'
@@ -41,10 +41,8 @@ dependencies {
     //compile('com.tencent.tinker:tinker-android-lib:1.7.7')
     provided 'com.tencent.tinker:tinker-android-anno:1.7.7'
     compile 'com.android.support:multidex:1.0.1'
-
     compile 'io.reactivex:rxjava:1.2.6'
     compile 'io.reactivex:rxandroid:1.2.1'
-
 }
 
 android {
@@ -63,7 +61,11 @@ android {
         buildConfigField "String", "TINKER_ID", "\"${getTinkerIdValue()}\""
         buildConfigField "String", "PLATFORM", "\"all\""
 
+        jackOptions {
+            enabled true
+        }
     }
+
 
     signingConfigs {
         release {
@@ -73,7 +75,7 @@ android {
                 keyAlias "tinker"
                 keyPassword "123456"
             } catch (ex) {
-                throw new InvalidUserDataException(ex.toString())
+                throw new Exception(ex.toString())
             }
         }
         debug {
@@ -100,10 +102,10 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
-    dexOptions {
-        incremental true
-        javaMaxHeapSize "4g"
-    }
+//    dexOptions {
+//        incremental true
+//        javaMaxHeapSize "4g"
+//    }
 
 //    productFlavors {
 //        // 0:官网;1百度;2:华为;3:小米;4:360;5:应用宝;6:91;7:安卓市场
@@ -132,6 +134,10 @@ android {
 //            manifestPlaceholders = [APP_CHANNEL_VALUE: "7"]
 //        }
 //    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 def bakPath = file("${buildDir}/bakApk/")
 
