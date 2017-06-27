@@ -226,6 +226,16 @@
                 android:textColor="#ffffff"/>
 
             <TextView
+                android:id="@+id/tv_searchjian"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="SearchJian"
+                android:textColor="#ffffff"/>
+
+            <TextView
                 android:id="@+id/tv_keep"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/common_40dp"
@@ -244,6 +254,7 @@
                 android:gravity="center"
                 android:text="ValueAnimator"
                 android:textColor="#ffffff"/>
+
             <TextView
                 android:id="@+id/tv_wallpager"
                 android:layout_width="match_parent"

@@ -97,6 +97,7 @@
         <activity android:name=".view.activity.custom.ViewDragHelperActivity"/>
 
         <activity android:name=".view.activity.search.SearchActivity"/>
+        <activity android:name=".view.activity.search.SearchJianActivity"/>
 
         <activity
             android:name=".view.activity.MaterialViewActivity"

@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 //apply plugin: 'android-apt'
 apply from: 'tinkerpatch.gradle'
 apply plugin: 'org.greenrobot.greendao'
-apply plugin: 'com.android.library'
+//apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'
 
 greendao {

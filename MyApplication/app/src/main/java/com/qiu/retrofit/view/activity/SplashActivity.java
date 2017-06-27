@@ -12,6 +12,7 @@ import com.qiu.retrofit.core.rxbus.RxBus;
 import com.qiu.retrofit.presenter.BasePresenter;
 import com.qiu.retrofit.view.activity.base.BaseActivity;
 import com.qiu.retrofit.view.activity.search.SearchActivity;
+import com.qiu.retrofit.view.activity.search.SearchJianActivity;
 import com.qiu.retrofit.view.activity.search.SearchableActivity;
 
 import butterknife.BindView;
@@ -140,6 +141,10 @@ public class SplashActivity extends BaseActivity {
 			case R.id.tv_searchable:
 				//SearchAble
 				startAnimActivity(new Intent(this, SearchableActivity.class));
+				break;
+			case R.id.tv_searchjian:
+				//SearchJian
+				startAnimActivity(new Intent(this, SearchJianActivity.class));
 				break;
 			case R.id.tv_keep:
 				//KeepLive
